@@ -50,15 +50,25 @@ a count of hotels available for purchase
 a method - auction - which will auction off the property in play this turn if first right of refusal is exercised
 
 an array of 4 objects: player - with properties:
+
 number
+
 name
+
 bank account
+
 and methods:
+
 roll - which will call a simulated dice roll and move the player to a new position on the board
+
 buy property - which will remove the necessary funds from the purchasers account and add the appropriate credit to the realty account.
+
 pass buy - which will decline to purchase whichever property was just landed on
+
 request rent - which will request rent from another player
+
 request pay - will request $200 
+
 improve property - which will purchase houses or hotels to adorn completed color groups
 
 
