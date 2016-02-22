@@ -1,6 +1,5 @@
 function dRoll(){return(Math.floor(Math.random()*6)+1)};//random number from 1-6.
-function dThrow(){ var roll1 = dRoll(); var roll2 = dRoll(); var rolls = [roll1 , roll2]; return (rolls); };
-//the above simulates the casting of 2d6.
+function dThrow(){ var roll1 = dRoll(); var roll2 = dRoll(); var rolls = [roll1 , roll2]; return (rolls); };//simulates the casting of 2d6.
 var doubles=1;//pre-increments the doubles count to 1
 var message="";//prepares an output variable
 var rolls = [];//prepares an array to accept input from dThrow function
