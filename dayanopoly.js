@@ -1,7 +1,5 @@
 var pName = prompt("What's your name?");
-var ownedProperties=[];
-var doubles = 0;
-	
+
 var player = {
 	number: 1, 
 	name: pName, 
@@ -12,8 +10,12 @@ var player = {
 var html = "";
 
 //non space entities
-var kitty = {};
-var jail = {};
+var kitty = {
+	account: 500,
+};
+var jail = {
+	function jailBreak(){}
+};
 var bank = {};
 
 //property group arrays
