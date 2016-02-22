@@ -1,12 +1,44 @@
 //non property spaces
-var go = {};
-var justVisiting = {};
-var freeParking = {};
-var goToJail = {};
-var Chance = {};
-var communityChest = {};
-var incomeTax = {};
-var luxuryTax = {};
+var go = {
+	name: 'GO!',
+	position: 1,
+	function pay(){/*will need t pay a player when they land on or pass GO!*/},
+};
+var justVisiting = {
+	name: 'Just Visiting',
+	position: 11,
+};
+var freeParking = {
+	name: 'Free Parking',
+	position: 21,
+	function bonus(){/*will add kitty to active players bank account*/}
+};
+var goToJail = {
+	name: 'Go To Jail!',
+	position: 31,
+	function busted(){/*sends active player to jail*/}
+	
+};
+var Chance = {
+	name: 'Chance',
+	position: [8, 23, 37],
+	function drawCard(){/*needs to draw 1 of 16 elements from an array*/}
+};
+var communityChest = {
+	name: 'Community Chest',
+	position: [3, 18, 34],
+	function drawCard(){/*needs to draw 1 of 16 elements from an array*/}
+};
+var incomeTax = {
+	name: 'Income Tax',
+	position: 5,
+	function calc10PerCent(){/*needs to calculate 10% of active players total worth*/}
+	function taxCollector(){/*needs to take either $200 or 10%*/}
+};
+var luxuryTax = {
+	name:'Luxury Tax',
+	position: 39,
+};
 
 //ownable, not buildable property objects
 var readingRR = {
