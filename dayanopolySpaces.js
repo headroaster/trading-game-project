@@ -2,7 +2,7 @@
 var go = {
 	name: 'GO!',
 	position: 1,
-	function pay(){/*will need t pay a player when they land on or pass GO!*/},
+	function pay(){/*will need to pay a player when they land on or pass GO!*/},
 };
 var justVisiting = {
 	name: 'Just Visiting',
