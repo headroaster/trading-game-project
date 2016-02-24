@@ -1,4 +1,6 @@
-//card shuffler
+/*draws a random card from the deck
+if this is run as a loop over the whole array, it will choose cards randomly one by one keeping track of which have been drawn
+once all the cards have been drawn, it will reset the drawn flag on each object to false, thereby resetting the deck for more draws.*/
 
 var deck = [ 
 	card1 = {
