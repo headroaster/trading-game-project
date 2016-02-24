@@ -2,6 +2,7 @@
 if this is run as a loop over the whole array, it will choose cards randomly one by one keeping track of which have been drawn
 once all the cards have been drawn, it will reset the drawn flag on each object to false, thereby resetting the deck for more draws.*/
 
+function draw (){ 
 var deck = [ 
 	card1 = {
 				caption: 'Take a ride on the Reading Railroad.  If you pass go collect $200', 
@@ -85,36 +86,34 @@ var deck = [
 				  }}
     ];
     
-function draw (){ 
+
 	var success = false;
 	while (success===false) { 
 		var cardsleft = false;
 		var howmany = 0;
 		var runs = 0;
 		card = deck[Math.floor(Math.random()*deck.length)];
-		if (card.drawn === false) 
-			{ card.drawn = true;
-			     success = true;
-			} else {}
-	
-		for(i=0;i<deck.length;i++) {
-			if (deck[i].drawn !== true) {
-				cardsleft = true;
-				howmany +=1;
-			}
+			
+
+			if (card.drawn === false) { 
+				card.drawn = true; success = true; }
+				else {}
+		
+			for(i=0; i<deck.length; i++) {
+				if (deck[i].drawn !== true) {
+					cardsleft = true;
+					howmany +=1; 
+				} else {
+				if (cardsleft === false) 
+					{ for(k=0; k<deck.length; k++) {
+						deck[k].drawn = false;
+						console.log(k + 'RESET!!!');
+					}
+					} else { 
+						console.log(howmany + ' cards left')
+						}	
+				} 
+				console.log(card.caption);
 		}
-		if (cardsleft === false) {
-			for(k=0;k<deck.length;k++) {
-				deck[k].drawn = false;
-				console.log(k + 'RESET!!!');
-			}
-			} else { 
-				console.log(howmany + ' cards left')
-		}	
-	} 
-	console.log(card.caption);
-}
-
-
 draw()
 
