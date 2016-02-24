@@ -91,7 +91,6 @@ var deck = [
 	while (success===false) { 
 		var cardsleft = false;
 		var howmany = 0;
-		var runs = 0;
 		card = deck[Math.floor(Math.random()*deck.length)];
 			
 
